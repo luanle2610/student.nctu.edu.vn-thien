@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Cổng thông tin sinh viên</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS v5.2.0-beta1 -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
+    <link rel="icon" href="https://nctu.edu.vn/uploads/page/2019_06/dfd896a5673d8263db2c.jpg">
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+  </head>
+
+  <body>
+    <header>
+      <div class="container">
+        <div class="row">
+          <div class="col-6 p-0">
+            <div class="logo">
+              <img
+                style="max-height: 40px"
+                src="http://student.nctu.edu.vn/Content/AConfig/images/sv_logo_dashboard.png"
+                alt=""
+              />
+            </div>
+          </div>
+          <div class="col-6 p-0">
+            <div class="user-info d-flex justify-content-end">
+              <div style="color: #77858e; margin-right: 12px">
+                <label for="info-input"><i class="fas fa-sort-down"></i></label>
+                <input type="checkbox" id="info-input" hidden/>
+                <div class="info-box">
+                  <ul style="list-style: none;" class="m-0 p-0">
+                    <li style="font-size: 12px; padding: 10px 15px; border-bottom: 1px solid rgb(238 238 238);">Thông tin cá nhân</li>
+                    <li style="font-size: 12px; padding: 10px 15px; border-bottom: 1px solid rgb(238 238 238);">Đổi mật khẩu</li>
+                    <li style="font-size: 12px; padding: 10px 15px; border-bottom: 1px solid rgb(238 238 238);">Đăng xuất</li>
+                  </ul>
+                </div>
+              </div>
+              <div
+                style="padding-top: 7px; padding-left: 20px; color: #77858e"
+              >
+                <label for="mobile-input"><i class="fas fa-bars"></i></label>
+              </div>
+              <input type="checkbox" id="mobile-input" hidden />
+              <div class="mobile-navbar">
+                <ul class="m-0 p-0" style="list-style: none;">
+                  <li style="padding: 5px 0;"><a style="font-size: 12px; color: rgb(102 117 128);" href=""><i class="fas fa-home" style="width: 20px; height: 20px;"></i> Trang chủ</a></li>
+                  <li style="padding: 5px 0;"><a style="font-size: 12px; color: rgb(102 117 128);" href=""><i class="far fa-bell" style="width: 20px; height: 20px;"></i> Tin tức</a></li>
+                  <li style="padding: 5px 0;"><a style="font-size: 12px; color: rgb(102 117 128);" href=""><i class="fas fa-tv" style="width: 20px; height: 20px;"></i> THÔNG TIN CHUNG</a> <i class="fa-solid fa-chevron-down" style="float: right; font-size: 12px; margin-top: 7px;"></i></li>
+                  <li style="padding: 5px 0;"><a style="font-size: 12px; color: rgb(102 117 128);" href=""><i class="fa-solid fa-graduation-cap" style="width: 20px; height: 20px;"></i></i> HỌC TẬP</a> <i class="fa-solid fa-chevron-down" style="float: right; font-size: 12px; margin-top: 7px;"></i></li>
+                  <li style="padding: 5px 0;"><a style="font-size: 12px; color: rgb(102 117 128);" href=""><i class="fa-regular fa-square-check" style="width: 20px; height: 20px;"></i> ĐĂNG KÝ HỌC PHẦN</a></li>
+                  <li style="padding: 5px 0;"><a style="font-size: 12px; color: rgb(102 117 128);" href=""><i class="fa-brands fa-cc-visa" style="width: 20px; height: 20px;"></i> HỌC PHÍ</a> <i class="fa-solid fa-chevron-down" style="float: right; font-size: 12px; margin-top: 7px;"></i></li>
+                  <li style="padding: 5px 0;"><a style="font-size: 12px; color: rgb(102 117 128);" href=""><i class="fa fa-sign-out" style="width: 20px; height: 20px;"></i> Đăng xuất</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div class="container" style="margin-top: 56px;">
+      <div class="row">
+        <div class="col-12">
+          <div class="profile-info shadow-sm">
+            <div class="portlet">
+              <div class="portlet-title"><span>Thông tin sinh viên</span></div>
+              <div class="portlet-body">
+                <div class="row" style="padding: 15px;">
+                  <div class="col-12 text-center">
+                    <div
+                      class="avatar rounded-circle m-auto"
+                      style="width: 120px; height: 120px; overflow: hidden"
+                    >
+                      <img
+                        src="https://f14-zpc.zdn.vn/8770754598870432737/85dae3032156e408bd47.jpg"
+                        width="100%"
+                        height="100%"
+                        alt=""
+                        class="rounded-circle"
+                      />
+                    </div>
+                    <div class="text-center">
+                      <a href="" style="font-size: 12px">Xem chi tiết</a>
+                    </div>
+                  </div>
+                  <div class="col-12" style="padding: 15px 0">
+                    <div class="row">
+                      <div class="col-6">
+                        <label
+                          for=""
+                          style="font-size: 12px; margin-bottom: 12px"
+                        >
+                          <span>MSSV: </span>
+                          <span class="fw-bold">191707</span>
+                        </label>
+                        <label
+                          for=""
+                          style="font-size: 12px; margin-bottom: 12px"
+                        >
+                          <span>Họ tên: </span>
+                          <span class="fw-bold">Nguyễn Phước Thiện</span>
+                        </label>
+                        <label
+                          for=""
+                          style="font-size: 12px; margin-bottom: 12px"
+                        >
+                          <span>Giới tính: </span>
+                          <span class="fw-bold">Nam</span>
+                        </label>
+                        <label
+                          for=""
+                          style="font-size: 12px; margin-bottom: 12px"
+                        >
+                          <span>Ngày sinh: </span>
+                          <span class="fw-bold">08/09/2001</span>
+                        </label>
+                        <label
+                          for=""
+                          style="font-size: 12px; margin-bottom: 12px"
+                        >
+                          <span>Nơi sinh: </span>
+                          <span class="fw-bold">Sóc Trăng</span>
+                        </label>
+                      </div>
+                      <div class="col-6">
+                        <label
+                          for=""
+                          style="font-size: 12px; margin-bottom: 12px"
+                        >
+                          <span>Lớp học: </span>
+                          <span class="fw-bold">DH19TIN03</span>
+                        </label>
+                        <label
+                          for=""
+                          style="font-size: 12px; margin-bottom: 12px"
+                        >
+                          <span>Khóa học: </span>
+                          <span class="fw-bold">2019</span>
+                        </label>
+                        <label
+                          for=""
+                          style="font-size: 12px; margin-bottom: 12px"
+                        >
+                          <span>Bậc đào tạo: </span>
+                          <span class="fw-bold">Đại học</span>
+                        </label>
+                        <label
+                          for=""
+                          style="font-size: 12px; margin-bottom: 12px"
+                        >
+                          <span>Loại hình đào tạo: </span>
+                          <span class="fw-bold">Chính quy 4</span>
+                        </label>
+                        <label
+                          for=""
+                          style="font-size: 12px; margin-bottom: 12px"
+                        >
+                          <span>Ngành: </span>
+                          <span class="fw-bold">Công nghệ thông tin</span>
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row" style="padding: 0px 10px">
+        <div
+          class="col-12 shadow-sm bg-white"
+          style="border-radius: 4px; margin-top: 15px; padding: 15px"
+        >
+          <h3 style="font-size: 12px">Nhắc nhở mới, chưa xem</h3>
+          <div class="desc d-flex justify-content-between align-items-center">
+            <div class="number" style="font-size: 36px">0</div>
+            <div
+              class="icon-menu border border-secondary rounded-circle text-center"
+              style="width: 30px; height: 30px; line-height: 30px"
+            >
+              <i class="far fa-bell"></i>
+            </div>
+          </div>
+          <div class="text-start" style="font-size: 12px">
+            <a href="">Xem chi tiết</a>
+          </div>
+        </div>
+      </div>
+      <div class="row d-flex justify-content-between" style="padding: 0px 10px">
+        <div
+          class="col-6 shadow-sm"
+          style="
+            margin-top: 15px;
+            width: 165px;
+            padding: 15px;
+            border-radius: px;
+            background: rgb(224 251 255);
+            color: rgb(77 161 232);
+          "
+        >
+          <h3 style="font-size: 12px">Lịch học trong tuần</h3>
+          <div class="desc d-flex justify-content-between align-items-center">
+            <div class="number" style="font-size: 36px">2</div>
+            <div
+              class="icon-menu rounded-circle text-center"
+              style="
+                width: 30px;
+                height: 30px;
+                line-height: 30px;
+                border: 1px solid rgb(77 161 232);
+              "
+            >
+              <i class="far fa-calendar-alt"></i>
+            </div>
+          </div>
+          <a href="" style="font-size: 12px; color: rgb(77 161 232)"
+            >Xem chi tiết</a
+          >
+        </div>
+        <div
+          class="col-6 shadow-sm"
+          style="
+            margin-top: 15px;
+            width: 165px;
+            padding: 15px;
+            border-radius: 4px;
+            background: rgb(255 242 212);
+            color: rgb(255 146 5);
+          "
+        >
+          <h3 style="font-size: 12px">Lịch học trong tuần</h3>
+          <div class="desc d-flex justify-content-between align-items-center">
+            <div class="number" style="font-size: 36px">0</div>
+            <div
+              class="icon-menu rounded-circle text-center"
+              style="
+                width: 30px;
+                height: 30px;
+                line-height: 30px;
+                border: 1px solid rgb(255 146 5);
+              "
+            >
+              <i class="far fa-calendar-check"></i>
+            </div>
+          </div>
+          <a href="" style="font-size: 12px; color: rgb(255 146 5)"
+            >Xem chi tiết</a
+          >
+        </div>
+        <div
+          class="col-6 shadow-sm bg-white"
+          style="
+            margin-top: 15px;
+            width: 165px;
+            padding: 10px;
+            border-radius: 4px;
+          "
+        >
+          <div
+            class="icon text-center"
+            style="margin-bottom: 10px; padding: 15px"
+          >
+            <img
+              src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAATCAYAAACKsM07AAAB0klEQVQ4ja3UPWiTURQG4Cc1OGiVVF1dzCKoRUEncREVqkgtqIs4RXEVB0HQodRRRHCTBlTE2kWXKoJSf1Z/FgUXA+Kg4GBbWwuJ2Djc+zWfSb8mtp7lhXPOfd97zrn35DYN1+E+Bvxfe4j+PB6hD1fwHV3LJJ5DAecxno/kl3FpKWyV0sL+Ytk0hpLbflkKeRv7SqMd3QskbMRL1DGBE/8o0A35jOBavI94A1txJ+bfijk7caFYnj+Tw0+cqZTMJs4sgauRfA1mou8Jbkah39iAvakzOUxhRZooS6AfH1PkcB37ougkHqMna8jtBB7gdKziR/SdjTgdsQ/3mlo0iS2V0nxOpsA5HBNKHsFm7MBJoT3wKVaVtip+dVLBDHpwTWjXZ2wTBp/YB1xErlJSL5YDNhNlCWzHHozjNlZhF3pxN+YcxygkbYpYqJRMLSYwIOymLDsSyZ/hsND7esSqvx9Gi0BXJH+N3cJO6RV21DscjRUcEpbZWLtX1LzYVkccRQ3f8BRvheGNxPiBxWlbBZKfV8Uw3mTkr0QZYx1wz9Jo0fqINeH9Z1kNpzogh3WJwAsMRueExsByGQfn0vHUR0vHCxjCqzz2CwMbbEldnj3HwT/r02383dtXnAAAAABJRU5ErkJggg=="
+              alt=""
+            />
+          </div>
+          <div class="text-center" style="font-size: 12px; margin-bottom: 15px">
+            Thông tin sinh viên
+          </div>
+        </div>
+        <div
+          class="col-6 shadow-sm bg-white"
+          style="
+            margin-top: 15px;
+            width: 165px;
+            padding: 10px;
+            border-radius: 4px;
+          "
+        >
+          <div
+            class="icon text-center"
+            style="margin-bottom: 10px; padding: 15px"
+          >
+            <img
+              src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABUAAAASCAYAAAC0EpUuAAABeUlEQVQ4jZXTPWsUYRQF4Gfi+IFFQAl2Qd2B2KUWAiIpVKI2QuwsZMHaH+FvkCXMgKRMEUhAk0IbCxNIpU0QXS1iZSGKCH5lJ8XMkDfjrjtzurn33HPPe++dqJPm67itHb5gEvGQ3GZcCj7FOqKGoj3sIA1qclzHnarTYzxr4bSHFSz1u4fBJLMbil7DpxZO4TJmk+yI0wWIOmn+FjMtxMbhQ4xLiqGfKLs1wfeSfyqoifCn3/UtxjzmcCYoeo+TmG7p8muS2Yrxogx8LrvlOFeLNZn1oKqrFnUfTwLCHt7g5jil2vYXsTJRfu/XuLnm8w2xT7H9qvgjJkqxC7VYEwxwkeL5t3AVZwPCO8V2z7d0uoqXUSfNKTZ93P+f/EvxvNMj8hH+9rt+xniN2ZaORiLJ7MalYA/LRs9vgEcOb7pyVufcxcPqpNawNcbENq7gVRisndSxUPQBpoZ0r5ArbjbGvTCRZP9wRJ0038CNMS7hN344+jsPw/MDRVBZilfLo0cAAAAASUVORK5CYII="
+              alt=""
+            />
+          </div>
+          <div class="text-center" style="font-size: 12px; margin-bottom: 15px">
+            Chương trình khung
+          </div>
+        </div>
+        <div
+          class="col-6 shadow-sm bg-white"
+          style="
+            margin-top: 15px;
+            width: 165px;
+            padding: 10px;
+            border-radius: 4px;
+          "
+        >
+          <div
+            class="icon text-center"
+            style="margin-bottom: 10px; padding: 15px"
+          >
+            <img
+              src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAAcCAYAAAByDd+UAAACdElEQVRIib3WSahOYRwG8N+RoUghs40hazJ0S6YbSuKKpCzIEYVYKDYWhlKElGsoC06mWFGmkmlPGUpZWAklESHcDMfifT+Oe+/3Odz7eep03nP+b+/z/p//8w6JY7mOIE/b/59keuIqJuMuGvPUuy4dYquNKxiDpRiCm1BPwgbsy1OnsAPjoWsdCW9ja5KZiDk4RPkMh2I5RpTpnGR2YSoOYzh25Kl1lMtwOm7ha+w/WzBDNbLd2IT5eepC63iZDM8JBuiGE7QdJMn0iu89kaypPbKyhF/wMbYfojue4CAak8wtfEgyT7AR8/LUxWqD/YlwBQZiEd5jN9biIuYLVh+KZUhwJ09dqjVgrRoejYRrcA0LcAP3YnwdcpzOUyeTTG/RiZBkVmExBuMVzuep5iLhDCyJg6/EzPjciPG97UxqJ7YnmQYF60c044NguAbsR3NF0mW4jiacxRQMKpBVw+b4jFKwfkQLtuSpxdgQv39KehxHsBpbsB4v/0AG8tTOmGlrtAhywrDWhM8xLgYmaVvbvvHfV7wpM5FqqEg6C6PxDNPQWOhzRij6S7ymuuX/hvCRYP9Z6I/7hT5NuIy5OB3f/4yidF8E47RGi2Cey+iNhYXYqiRra/1ahGV3mn6xPUCoYwXNGCsoNFKwfk109Dxs1/q1UJG0n2CanviMx4JEZQjbWL8M4Xnh/PouZH1PWCadjoqkE3BAmOU24S5SF1QIPwmL/wWe+nUc1Y3wm1A/6CVIW1fC/4Zihm9j+7XfM+zUWFfhvjhEuCE/EM7FPsLlSZlYkv2KJVnN2ITEsfyBsEt0jxP4JqzFSk0/okcnxFrw9AcL/rqKbZW/OQAAAABJRU5ErkJggg=="
+              alt=""
+            />
+          </div>
+          <div class="text-center" style="font-size: 12px; margin-bottom: 15px">
+            Kết quả học tập
+          </div>
+        </div>
+        <div
+          class="col-6 shadow-sm bg-white"
+          style="
+            margin-top: 15px;
+            width: 165px;
+            padding: 10px;
+            border-radius: 4px;
+          "
+        >
+          <div
+            class="icon text-center"
+            style="margin-bottom: 10px; padding: 15px"
+          >
+            <img
+              src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAAcCAYAAAByDd+UAAACdElEQVRIib3WSahOYRwG8N+RoUghs40hazJ0S6YbSuKKpCzIEYVYKDYWhlKElGsoC06mWFGmkmlPGUpZWAklESHcDMfifT+Oe+/3Odz7eep03nP+b+/z/p//8w6JY7mOIE/b/59keuIqJuMuGvPUuy4dYquNKxiDpRiCm1BPwgbsy1OnsAPjoWsdCW9ja5KZiDk4RPkMh2I5RpTpnGR2YSoOYzh25Kl1lMtwOm7ha+w/WzBDNbLd2IT5eepC63iZDM8JBuiGE7QdJMn0iu89kaypPbKyhF/wMbYfojue4CAak8wtfEgyT7AR8/LUxWqD/YlwBQZiEd5jN9biIuYLVh+KZUhwJ09dqjVgrRoejYRrcA0LcAP3YnwdcpzOUyeTTG/RiZBkVmExBuMVzuep5iLhDCyJg6/EzPjciPG97UxqJ7YnmQYF60c044NguAbsR3NF0mW4jiacxRQMKpBVw+b4jFKwfkQLtuSpxdgQv39KehxHsBpbsB4v/0AG8tTOmGlrtAhywrDWhM8xLgYmaVvbvvHfV7wpM5FqqEg6C6PxDNPQWOhzRij6S7ymuuX/hvCRYP9Z6I/7hT5NuIy5OB3f/4yidF8E47RGi2Cey+iNhYXYqiRra/1ahGV3mn6xPUCoYwXNGCsoNFKwfk109Dxs1/q1UJG0n2CanviMx4JEZQjbWL8M4Xnh/PouZH1PWCadjoqkE3BAmOU24S5SF1QIPwmL/wWe+nUc1Y3wm1A/6CVIW1fC/4Zihm9j+7XfM+zUWFfhvjhEuCE/EM7FPsLlSZlYkv2KJVnN2ITEsfyBsEt0jxP4JqzFSk0/okcnxFrw9AcL/rqKbZW/OQAAAABJRU5ErkJggg=="
+              alt=""
+            />
+          </div>
+          <div class="text-center" style="font-size: 12px; margin-bottom: 15px">
+            Lịch theo tuần
+          </div>
+        </div>
+        <div
+          class="col-6 shadow-sm bg-white"
+          style="
+            margin-top: 15px;
+            width: 165px;
+            padding: 10px;
+            border-radius: 4px;
+          "
+        >
+          <div
+            class="icon text-center"
+            style="margin-bottom: 10px; padding: 15px"
+          >
+            <img
+              src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAcCAYAAABoMT8aAAAB0UlEQVQ4jZ3VTYjNURgG8N9cN8Og8f0RkZ3FZKhBiYWFWbExZWJBYoWyk2ywoGRhIhbyUSMbZKOUxsaERAlLxCxkJcQdRt0xFu/5c437/WzOR+/7nHOe9znntLg8pgouYBq2VQrIV8vGMsysFlCOYAp2YgM6MQG3cB/9+FwanBuXfA4FnMHS1C9gEU7hE65UIniNvdiPVnThAV5iNSZiD3bgQxr/IXicVpyUdjGa5tsxtWSRS+lIrXiRadCNNZiDn2U0KYeF+IHeHA7jFT7WmQwj+ILTecwS4jSKY5ibx400aBR9hIgn0sTFJkjkUcRGDGAydoszwphQvSKyMt7DOvQIda+jI/WriltqpIfCB4dEWZ9jE2YLU9UkyHASS4T7nmAlnuItDtRDkOEZhjCIFWlHfeJurK+HAOahTdh2i7D1nUTaXQ/B6LjxMLbiPO6irRZBJexL7ZEcjuJgEyQD2JwT9/t4EwTTMZwTpcn7997Xg1U4m8NtofL7BpKH8A79mYhdwv9FbC8J/CrqnqEH38QT0MnfMhYxH1dxDd/xCGuxXLyNBdwUPmhPRP/5YBcWCFELmCHEGhGv8mL04leW0FLjZxoUH0tHpYBaP9MbNarzG3VVYP2cWKHIAAAAAElFTkSuQmCC"
+              alt=""
+            />
+          </div>
+          <div class="text-center" style="font-size: 12px; margin-bottom: 15px">
+            Tra cứu công nợ
+          </div>
+        </div>
+        <div
+          class="col-6 shadow-sm bg-white"
+          style="
+            margin-top: 15px;
+            width: 165px;
+            padding: 10px;
+            border-radius: 4px;
+          "
+        >
+          <div
+            class="icon text-center"
+            style="margin-bottom: 10px; padding: 15px"
+          >
+            <img
+              src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABIAAAAYCAYAAAD3Va0xAAABaElEQVQ4jaXUv0ocURTH8c9mNxKFrZLGRDConQi+gEJiNg+QznqtjC8gWFiJtRjSaB5BSJsNJFY2KdOKCBsRQtgmoMF1N8XehetkrjtDfs059993zu/OnKnMHPTncIQFo9XBNVZxDKfNwUINXzCFD+jiQQ6gh9d4HsZfw7g13FALkPdYH1HNNrYwGUCf0MBn0dP7BWw9QRU/MY8LtGYPvYpBDwuAKpnxM3wPsKW8+0hpLMSnmAj5Cn6jVSsBaof4I2etWwa0hz+YjuZ6WMZMGVAHuznzO9gsc0cpPSb/48tqHRujNhWx9i7E/f8FtRWovIi1vkEPco/NVEXjIV6FeBNi0mYKdBLiYoAM2+NcwkUKNBvlPXebO7fBU6BfUZ5t1lylQGOZvBLlpazVo8P16HDd4J+UBHUz8y8iUCPKX/rX6m0M6mUWvxXIh7oZgi7xFo9CZYUu1+DtVbGGTi2U+xHNgoCszvDmL10iQd6WN1YNAAAAAElFTkSuQmCC"
+              alt=""
+            />
+          </div>
+          <div class="text-center" style="font-size: 12px; margin-bottom: 15px">
+            Phiếu thu tổng hợp
+          </div>
+        </div>
+        <div
+          class="col-6 shadow-sm bg-white"
+          style="
+            margin-top: 15px;
+            width: 165px;
+            padding: 10px;
+            border-radius: 4px;
+          "
+        >
+          <div
+            class="icon text-center"
+            style="margin-bottom: 10px; padding: 15px"
+          >
+            <img
+              src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAAYCAYAAADpnJ2CAAABl0lEQVRIie3WP2sVQRSG8d9cNwn+6Qy2goU2io0YtLAXQWJhKbiFVinUTrCzUARt1DTCTuEHECttk3SCja1lUGwURBSTaMZid8MS7nXnRpNCfGFhZ8+885w9e2bYoEoydQ/nEdCa2vsXqXQ9Z5EiE/YQc3jWgXV1LUTTqXTpbwEv4Amubg6kkhDN4zL5wEM4YHj2CZM4ilPqMm4oRAnHEUJ0cnO8nYaPqfQ2qNJt3OpJbBW7mmuYfuIHpnrWeRBUKeEmno7IDr43scnfJLSO3SPiCbN41JZ0Ce96shu+Upk3L0SLMGjG+7cCG1PTWG+B47xdwF3cN7rEw7SMQYE1XMFMhukrbuCwuknOhegO9mZ4j2AlqNIXdXetGd001B9+T3PfzlvFBL5leAusFNiHs3iZkeUZLOCYunMnMJtKz/uMITqNpbZLcw/URTzGm2Ycc2BdtcC+DdvVHKL6EHg1hm+qCxxXr7fo29iHO6b/wH8HmP1j8wdKXeD7HQAuYxBU6TM+qU+R7dQMDhY4gfnmwXaVNuADLv4Co1ZbwkqTYWcAAAAASUVORK5CYII="
+              alt=""
+            />
+          </div>
+          <div class="text-center" style="font-size: 12px; margin-bottom: 15px">
+            Nhắc nhở
+          </div>
+        </div>
+      </div>
+      <div class="row" style="padding: 0px 10px; margin-top: 15px">
+        <div class="col bg-white" style="padding: 10px; border-radius: 4px">
+          <div class="d-flex justify-content-between">
+            <a href="" class="fw-bold" style="font-size: 18px; color: #667580"
+              >Kết quả học tập</a
+            >
+            <select
+              name=""
+              id=""
+              style="
+                padding: 6px 12px;
+                border: 1px solid rgb(204 204 204);
+                font-size: 14px;
+              "
+            >
+              <option value="">HK1 (2022-2023)</option>
+              <option value="">HK2 (2021-2022)</option>
+              <option value="">HK1 (2021-2022)</option>
+              <option value="">HK2 (2020-2021)</option>
+            </select>
+          </div>
+          <div>
+            <img
+              class="w-100"
+              src="https://f5-zpcloud.zdn.vn/4178654345390146011/3a20f3300861cd3f9470.jpg"
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
+      <div class="row" style="padding: 0px 10px; margin-top: 15px">
+        <div class="col bg-white" style="padding: 10px; border-radius: 4px">
+          <div>
+            <a href="" class="fw-bold" style="font-size: 18px; color: #667580"
+              >Tiến độ học tập</a
+            >
+          </div>
+          <div>
+            <img
+              class="w-100"
+              src="https://f5-zpcloud.zdn.vn/7258653326763800989/0eed1983e4d2218c78c3.jpg"
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bootstrap JavaScript Libraries -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
+      integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"
+      crossorigin="anonymous"
+    ></script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js"
+      integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
